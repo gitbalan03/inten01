@@ -1,0 +1,80 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+}
+
+body {
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+}
+
+.post-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.post-content {
+  white-space: pre-wrap;
+  line-height: 1.8;
+}
+
+.comment-item {
+  border-left: 3px solid #e2e8f0;
+  padding-left: 1rem;
+  transition: border-color 0.15s;
+}
+
+.comment-item:hover {
+  border-left-color: var(--primary);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: white;
+  padding: 4rem 0 3rem;
+}
+
+.badge-author {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 500;
+}
+
+.text-truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
